@@ -18,3 +18,25 @@ Ce projet met en pratique :
 ---
 
 ## 🧱 Architecture du projet
+
+
+---
+
+# 🟦 **2. script.sql (à mettre dans ton dépôt)**
+
+```sql
+CREATE DATABASE IF NOT EXISTS inventaire;
+USE inventaire;
+
+CREATE TABLE IF NOT EXISTS products (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    quantity INT,
+    price DOUBLE
+);
+
+INSERT INTO products VALUES (1, 'Stylo', 50, 1.20);
+INSERT INTO products VALUES (2, 'Cahier', 30, 2.50);
+INSERT INTO products VALUES (3, 'Clé USB', 15, 9.99);
+INSERT INTO products VALUES (4, 'Souris', 10, 14.90);
+INSERT INTO products VALUES (5, 'Casque Audio', 8, 29.90);
